@@ -101,18 +101,12 @@ body {
   height: 432px;
   padding-bottom: 0;
   /* top: 668px; */
-}
-
-.intro-text {
-  /* position: absolute; */
   width: 800px;
   height: 200px;
   left: 410px;
   top: 791px;
 
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 50px;
   /* or 167% */
