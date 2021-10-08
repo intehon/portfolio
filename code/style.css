@@ -5,7 +5,7 @@ body {
 .header-img {
   width: 100%;
   height: 500px;
-  background: url("/code/images/ragsved.jpg");
+  background: url("/code/images/header-img.jpg");
   background-position: center;
   background-size: contain, cover;
   /* background-repeat: no-repeat; */
@@ -17,25 +17,28 @@ body {
 
 .linkedin-icon {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 1250px;
+  width: 70px;
+  height: 70px;
+  /* left: 1250px; */
+  right: 240px;
   top: 102px;
 }
 
 .github-icon {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 1340px;
+  width: 70px;
+  height: 70px;
+  /* left: 1340px; */
+  right: 330px;
   top: 102px;
 }
 
 .stackoverflow-icon {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 1430px;
+  width: 70px;
+  height: 70px;
+  /* left: 1430px; */
+  right: 420px;
   top: 102px;
 }
 
@@ -83,8 +86,8 @@ body {
 }
 
 .portfolio-section {
-  padding-top: 120px;
-  padding-bottom: 126px;
+  padding-top: 60px;
+  padding-bottom: 66px;
 }
 
 .portfolio-section:nth-child(2n) {
@@ -92,23 +95,23 @@ body {
 }
 
 .container {
-  width: 320px;
+  /* width: 320px; */
   margin: 0 auto;
 }
 
 .intro-container {
   /* position: absolute; */
-  height: 432px;
+  /* height: 432px; */
   padding-bottom: 0;
   /* top: 668px; */
   width: 800px;
-  height: 200px;
-  left: 410px;
-  top: 791px;
+  /* height: 200px; */
+  /* left: 410px; */
+  /* top: 791px; */
 
   font-family: Montserrat;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 22px;
+  line-height: 34px;
   /* or 167% */
 
   color: #000000;
@@ -132,17 +135,17 @@ body {
 .portfolio-heading-container {
   display: flex;
   justify-content: center;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 .portfolio-heading {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 59px;
+  font-size: 36px;
+  line-height: 42px;
   letter-spacing: 0.01em;
-  background-color: #fa382f;
+  background-color: #050c26;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -153,8 +156,8 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 22px;
+  line-height: 34px;
   /* or 167% */
 
   text-align: center;
@@ -169,18 +172,25 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 54px;
+  justify-content: center;
 }
 
 .project-container-child {
   font-family: Roboto;
   font-style: normal;
-  font-size: 25px;
-  line-height: 41px;
+  font-size: 18px;
+  line-height: 29px;
+  width: 482px;
   /* or 164% */
   /* 
   display: flex;
   align-items: center; */
   letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .image-container {
@@ -205,7 +215,7 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 41px;
   /* or 164% */
 
@@ -213,21 +223,88 @@ body {
   align-items: center;
   letter-spacing: 0.01em;
 
-  color: #fa382f;
+  color: #072d54;
+}
+
+.tag-wrapper {
+  display: flex;
+}
+
+.tag-wrapper span {
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+  font-weight: bold;
+  background-color: #db9aab;
+  text-decoration: none;
+
+  /* Matching line-height and font-size here gives full control 
+     over the size of our tags to the padding*/
+  font-size: 12px;
+  line-height: 12px;
+
+  /* Control the size of the tags */
+  padding: 4px;
+
+  /* Control the spacing of our tags */
+  margin: 3px;
+
+  /* Some rounded borders */
+  border-radius: 5px;
 }
 
 .portfolio-heading-reversed {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 38px;
-  line-height: 47px;
-  padding: 20px;
+  font-size: 28px;
+  line-height: 38px;
+  padding-top: 80px;
   /* identical to box height, or 124% */
 
   text-align: center;
 
-  color: #fa382f;
+  color: #072d54;
+}
+
+.other-projects-container-child {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+
+.other-projects-container-child h2 {
+  text-decoration: underline;
+}
+
+.other-projects-container-child p {
+  font-size: 16px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.code-thoughts-section {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.skills-section-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  /* or 164% */
+  text-align: center;
+}
+.skills-section-parent h2 {
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
