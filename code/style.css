@@ -294,11 +294,16 @@ a {
   justify-content: center;
 }
 
+.icon-wrapper {
+  /* display: inline-flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-media-section {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  text-align: center;
 }
 
 .blue-icon {
