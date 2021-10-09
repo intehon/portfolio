@@ -5,7 +5,7 @@ body {
 .header-img {
   width: 100%;
   height: 500px;
-  background: url("/code/images/header-img.jpg");
+  background: url("./images/header-img.jpg");
   background-position: center;
   background-size: contain, cover;
   /* background-repeat: no-repeat; */
@@ -13,33 +13,15 @@ body {
 
 .icon-container {
   display: flex;
-}
-
-.linkedin-icon {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  /* left: 1250px; */
-  right: 240px;
-  top: 102px;
-}
-
-.github-icon {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  /* left: 1340px; */
   right: 330px;
-  top: 102px;
+  top: 120px;
+  gap: 10px;
 }
 
-.stackoverflow-icon {
-  position: absolute;
+.white-icon {
   width: 70px;
   height: 70px;
-  /* left: 1430px; */
-  right: 420px;
-  top: 102px;
 }
 
 .header-text {
@@ -206,6 +188,10 @@ a {
   background: rgba(156, 166, 197, 0.5);
 }
 
+.overlay:hover {
+  display: none;
+}
+
 .image {
   width: 100%;
   display: block;
@@ -217,6 +203,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 41px;
+  text-transform: uppercase;
   /* or 164% */
 
   display: flex;
@@ -259,6 +246,7 @@ a {
   font-size: 28px;
   line-height: 38px;
   padding-top: 80px;
+  text-transform: uppercase;
   /* identical to box height, or 124% */
 
   text-align: center;
@@ -272,7 +260,7 @@ a {
   width: 900px;
 }
 
-.other-projects-container-child h2 {
+.other-projects-container-child a {
   text-decoration: underline;
 }
 
@@ -280,7 +268,6 @@ a {
   font-size: 16px;
   color: #000000;
   font-weight: normal;
-  text-decoration: underline;
 }
 
 .code-thoughts-section {
@@ -305,6 +292,42 @@ a {
 }
 .skills-section-parent h2 {
   justify-content: center;
+}
+
+.social-media-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.blue-icon {
+  width: 90px;
+  height: 90px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  color: white;
+  background-color: #374d63;
+  padding: 50px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.footer-section a {
+  padding: 5px;
+}
+
+.footer-heading {
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
