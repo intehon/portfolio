@@ -9,10 +9,10 @@ body {
 
 .header-img {
   width: 100%;
-  height: 500px;
+  height: 490px;
   background: url("./images/header-img.jpg");
   background-position: center;
-  background-size: contain, cover;
+  background-size: cover;
 }
 
 .icon-container {
@@ -20,8 +20,9 @@ body {
   position: absolute;
   width: 130.5px;
   height: 40px;
-  left: 290px;
+  left: 240px;
   top: 48px;
+  gap: 5px;
 }
 
 .white-icon {
@@ -53,7 +54,7 @@ body {
   position: absolute;
   width: 180px;
   height: 180px;
-  left: 230px;
+  left: 200px;
   top: 390px;
 
   width: 150px;
@@ -83,7 +84,7 @@ body {
 
 .intro-container {
   width: 325px;
-  padding: 20px;
+  padding: 0;
   font-family: Montserrat;
   font-size: 17px;
   line-height: 29px;
@@ -123,9 +124,6 @@ body {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  /* font-size: 22px;
-  line-height: 27px;
-  text-align: center; */
 }
 
 .tech-description {
@@ -145,13 +143,10 @@ body {
 }
 
 .project-container-parent {
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-columns: 1fr;
-  /* justify-content: center; */
   width: 325px;
-  padding: 10px;
+  padding: 0;
   font-size: 17px;
   line-height: 29px;
 }
@@ -260,7 +255,6 @@ a {
   font-size: 17px;
   line-height: 29px;
   text-transform: uppercase;
-  /* align-items: center; */
   letter-spacing: 0.01em;
   color: #072d54;
 }
@@ -311,7 +305,6 @@ a {
 
 .icon-wrapper {
   display: inline-flex;
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
@@ -329,7 +322,7 @@ footer {
   font-family: Montserrat;
   color: white;
   background-color: #374d63;
-  padding: 50px;
+  padding-top: 50px;
 }
 .footer-section {
   display: flex;
@@ -346,12 +339,7 @@ footer {
   text-transform: uppercase;
 }
 
-/* @media (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
-  }
-} */
+/* ---------- PAD ---------- */
 
 @media (min-width: 768px) {
   .container {
@@ -360,7 +348,7 @@ footer {
   }
 
   .icon-container {
-    right: 330px;
+    left: 468px;
     top: 120px;
     gap: 10px;
   }
@@ -373,17 +361,15 @@ footer {
   .header-text {
     width: 607px;
     height: 339px;
-    left: 410px;
     top: 206px;
     font-size: 28px;
     line-height: 37px;
   }
 
   .profile-img {
-    /* Positioning */
-    right: 230px;
+    left: 550px;
     bottom: 170px;
-    top: 378px;
+    top: 350px;
 
     width: 200px;
     height: 200px;
@@ -393,23 +379,12 @@ footer {
     padding-top: 60px;
     padding-bottom: 66px;
   }
-  /* 
-.portfolio-section:nth-child(2n) {
-  background-color: #f4f4f4;
-} */
 
   .intro-container {
-    /* position: absolute; */
-    /* height: 432px; */
     padding-bottom: 0;
-    /* top: 668px; */
-    width: 800px;
-    /* height: 200px; */
-    /* left: 410px; */
-    /* top: 791px; */
+    width: 768px;
     font-size: 22px;
     line-height: 34px;
-    /* or 167% */
   }
 
   .line {
@@ -427,26 +402,21 @@ footer {
   }
 
   .tech-description {
-    width: 800px;
+    width: 768px;
     font-size: 22px;
     line-height: 34px;
-    /* or 167% */
   }
 
   .project-container-parent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 800px;
-    gap: 54px;
+    width: 768px;
+    gap: 50px;
     justify-content: center;
   }
 
   .project-container-child {
-    width: 482px;
-    /* or 164% */
-    /* 
-  display: flex;
-  align-items: center; */
+    width: 350px;
     letter-spacing: 0.01em;
   }
   .project-container-child:nth-child(3) {
@@ -468,13 +438,12 @@ footer {
   .portfolio-heading-reversed {
     font-size: 28px;
     line-height: 38px;
-    /* identical to box height, or 124% */
   }
 
   .other-projects-container-child {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 768px;
   }
 
   .other-projects-container-child a {
@@ -493,17 +462,16 @@ footer {
   .skills-section-parent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    width: 768px;
     font-size: 18px;
     line-height: 18px;
-    /* or 164% */
   }
+
   .skills-section-child:nth-child(3) {
     display: unset;
   }
 
   .icon-wrapper {
-    /* display: inline-flex; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,5 +485,68 @@ footer {
   .blue-icon {
     width: 90px;
     height: 90px;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media (min-width: 992px) {
+  .icon-container {
+    left: 750px;
+    top: 120px;
+    gap: 10px;
+  }
+
+  .white-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header-text {
+    width: 607px;
+    height: 339px;
+    left: 180px;
+    top: 206px;
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .profile-img {
+    left: 750px;
+    bottom: 170px;
+    top: 350px;
+
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon-container {
+    left: 1150px;
+    top: 120px;
+    gap: 10px;
+  }
+
+  .white-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header-text {
+    width: 607px;
+    height: 339px;
+    left: 220px;
+    top: 206px;
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .profile-img {
+    left: 1050px;
+    bottom: 170px;
+    top: 350px;
+
+    width: 200px;
+    height: 200px;
   }
 }
