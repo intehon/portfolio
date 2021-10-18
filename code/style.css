@@ -20,7 +20,7 @@ body {
   position: absolute;
   width: 130.5px;
   height: 40px;
-  left: 240px;
+  right: 30px;
   top: 48px;
   gap: 5px;
 }
@@ -42,7 +42,6 @@ body {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  /* or 138% */
 
   letter-spacing: 0.04em;
 
@@ -54,8 +53,8 @@ body {
   position: absolute;
   width: 180px;
   height: 180px;
-  left: 200px;
-  top: 390px;
+  right: 50px;
+  bottom: 50px;
 
   width: 150px;
   height: 150px;
@@ -348,8 +347,8 @@ footer {
   }
 
   .icon-container {
-    left: 468px;
-    top: 120px;
+    right: 200px;
+    top: 50px;
     gap: 10px;
   }
 
@@ -361,16 +360,14 @@ footer {
   .header-text {
     width: 607px;
     height: 339px;
-    top: 206px;
+    /* top: 206px; */
     font-size: 28px;
     line-height: 37px;
   }
 
   .profile-img {
-    left: 550px;
-    bottom: 170px;
-    top: 350px;
-
+    right: 100px;
+    bottom: 50px;
     width: 200px;
     height: 200px;
   }
@@ -492,8 +489,8 @@ footer {
 
 @media (min-width: 992px) {
   .icon-container {
-    left: 750px;
-    top: 120px;
+    right: 300px;
+    top: 100px;
     gap: 10px;
   }
 
@@ -512,39 +509,8 @@ footer {
   }
 
   .profile-img {
-    left: 750px;
-    bottom: 170px;
-    top: 350px;
-
-    width: 200px;
-    height: 200px;
-  }
-}
-@media (min-width: 1200px) {
-  .icon-container {
-    left: 1150px;
-    top: 120px;
-    gap: 10px;
-  }
-
-  .white-icon {
-    width: 70px;
-    height: 70px;
-  }
-
-  .header-text {
-    width: 607px;
-    height: 339px;
-    left: 220px;
-    top: 206px;
-    font-size: 28px;
-    line-height: 37px;
-  }
-
-  .profile-img {
-    left: 1050px;
-    bottom: 170px;
-    top: 350px;
+    right: 150px;
+    bottom: 50px;
 
     width: 200px;
     height: 200px;
