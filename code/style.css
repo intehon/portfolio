@@ -11,9 +11,9 @@ body {
   width: 100%;
   height: 490px;
   position: relative;
-  background: url("./images/header-img.jpg");
+  background: url('./images/header-img.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .icon-container {
@@ -213,7 +213,7 @@ a {
 }
 
 .tag-wrapper span {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #2b2e34;
   font-weight: bold;
   background-color: #db9aab;
